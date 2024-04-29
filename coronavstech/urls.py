@@ -19,8 +19,4 @@ from django.contrib import admin
 from django.urls import path, include
 from companies.urls import compnies_router
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("",include(compnies_router.urls))
-]
-    
+urlpatterns = [path("admin/", admin.site.urls), path("", include(compnies_router.urls))]

@@ -6,7 +6,8 @@ from rest_framework.pagination import PageNumberPagination
 from .serializers import CompanySerializers
 from .models import Companies
 
+
 class CompanyViewSet(ModelViewSet):
     serializer_class = CompanySerializers
-    queryset = Companies.objects.all().order_by('-last_update')
+    queryset = Companies.objects.all().order_by("-last_update")
     pagination_class = PageNumberPagination
