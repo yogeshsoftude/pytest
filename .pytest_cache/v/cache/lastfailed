@@ -1,0 +1,4 @@
+{
+  "companies/test": true,
+  "companies/tests/test_api.py::TestPostCompany::test_raise_covid19_exception_should_pass": true
+}
