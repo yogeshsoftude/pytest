@@ -21,3 +21,6 @@ __pycache__/
 env
 
 .pytest_cache/
+
+# Ignore all untracked files
+*
