@@ -18,5 +18,6 @@ __pycache__/
 # Ignore Django migrations
 */migrations/
 */env/
+env
 
 .pytest_cache/
