@@ -1,0 +1,22 @@
+# Ignore database files
+db.sqlite3
+
+# Ignore static files collected by Django
+/static/
+
+# Ignore media files uploaded by users
+/media/
+
+# Ignore environment-specific settings
+.env
+
+# Ignore IDE specific files
+.vscode/
+*.pyc
+*.pyo
+__pycache__/
+# Ignore Django migrations
+*/migrations/
+*/env/
+
+.pytest_cache/
