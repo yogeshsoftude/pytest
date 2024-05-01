@@ -17,6 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from companies.urls import compnies_router
+from companies.urls import compnies_router 
+from companies.views import send_company_mail
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include(compnies_router.urls))]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include(compnies_router.urls)),
+    path('send_company_mail/', send_company_mail, name='send_company_mail'),
+]  # Remove the comma here
